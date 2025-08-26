@@ -1,21 +1,28 @@
-import {Button, Text, View, StyleSheet} from "react-native";
+import {Button, Text, View, StyleSheet, ScrollView} from "react-native";
 import Header from "../components/Header";
 import FormCadastro from "../components/FormCadastro";
 import BtnCont from "../components/BtnCont";
 import sizes from "../design/sizes";
 import colors from "../design/colors";
+import EmptyList from "../components/EmptyList";
+import Search from "../components/Search";
+import Card from "../components/Card";
 
-export default function (HomeScreen) {
+export default function HomeScreen() {
     return (
-        <>
+        <ScrollView>
             <Header />
             <FormCadastro/>
 
             <View style={styles.containerBotoes}>
-                <BtnCont/>
-                <BtnCont/>
+                <BtnCont titulo={"Tarefas Criadas"} numero={"12"}/>
+                <BtnCont titulo={"Concluídas"} numero={"5"} eVerde={true}/>
             </View>
-        </>
+            <Search/>
+            <EmptyList/>
+            <Card/>
+            <Card ativo={true}/>
+        </ScrollView>
     )
 }
 
