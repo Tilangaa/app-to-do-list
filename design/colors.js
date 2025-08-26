@@ -7,9 +7,13 @@ green_base: "#479C6E",
 green_dark: "#2D6C4A",
 gray_100: "#F0EDF2",
 gray_200: "#E5E2E9",
-grey_330: "#E0DCE4",
+gray_330: "#E0DCE4",
 gray_400: "#D1CBD7",
 gray_500: "#6B6572",
 gray_600: "#262428",
-danger: "#C2464D"
+
+danger: "#C2464D",
+
+    black: "#000000",
+    white: "#FFFFFF",
 }
